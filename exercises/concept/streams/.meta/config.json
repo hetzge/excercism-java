@@ -1,0 +1,20 @@
+{
+  "authors": [
+    "hetzge"
+  ],
+  "files": {
+    "solution": [
+      "src/main/java/Streams.java"
+    ],
+    "test": [
+      "src/test/java/StreamsTest.java"
+    ],
+    "exemplar": [
+      ".meta/src/reference/java/Streams.java"
+    ],
+    "invalidator": [
+      "build.gradle"
+    ]
+  },
+  "blurb": "Learn the basic usage of Java streams."
+}
