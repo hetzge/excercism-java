@@ -772,6 +772,16 @@
         "difficulty": 5
       },
       {
+        "slug": "streams",
+        "name": "Stream Basics",
+        "uuid": "bea70087-3757-49cd-bbca-e6f3b81d4f48",
+        "concepts": [
+          "lists"
+        ],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
         "slug": "nucleotide-count",
         "name": "Nucleotide Count",
         "uuid": "2d80fdfc-5bd7-4b67-9fbe-8ab820d89051",
