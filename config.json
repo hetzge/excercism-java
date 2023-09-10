@@ -225,6 +225,17 @@
           "booleans"
         ],
         "status": "active"
+      },
+      {
+        "slug": "streams",
+        "name": "Stream Basics",
+        "uuid": "bea70087-3757-49cd-bbca-e6f3b81d4f48",
+        "concepts": [
+          "lists"
+        ],
+        "prerequisites": [
+		],
+		"status": "active"
       }
     ],
     "practice": [
@@ -769,16 +780,6 @@
           "conditionals-if",
           "classes"
         ],
-        "difficulty": 5
-      },
-      {
-        "slug": "streams",
-        "name": "Stream Basics",
-        "uuid": "bea70087-3757-49cd-bbca-e6f3b81d4f48",
-        "concepts": [
-          "lists"
-        ],
-        "prerequisites": [],
         "difficulty": 5
       },
       {

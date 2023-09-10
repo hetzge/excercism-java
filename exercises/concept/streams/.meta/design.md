@@ -2,7 +2,7 @@
 
 ## Goal
 
-The goal of this exercise is to teach the student the basics of the Concept of Conditionals in Java.
+The goal of this exercise is to teach the student the basics of the concept of Streams in Java.
 
 ## Learning objectives
 
