@@ -14,4 +14,5 @@ There are many things a `Stream` can do and it is not possible to explain them a
 
 Here are a few links to further explore the topic:
 
-- TODO
+- https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html
+- https://www.baeldung.com/java-8-streams
