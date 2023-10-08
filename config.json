@@ -66,7 +66,7 @@
           "foreach-loops"
         ],
         "prerequisites": [
-          "conditionals-if"
+          "if-else-statements"
         ],
         "status": "active"
       },
@@ -90,14 +90,13 @@
         "name": "Calculator Conundrum",
         "uuid": "9e62feec-c2c3-4fd6-94f5-0574cc65447d",
         "concepts": [
-          "exception-handling"
+          "exceptions"
         ],
         "prerequisites": [
-          "conditionals",
-          "switch-case",
-          "basics"
+          "if-else-statements",
+          "switch-statement"
         ],
-        "status": "wip"
+        "status": "beta"
       },
       {
         "slug": "squeaky-clean",
@@ -119,7 +118,7 @@
           "classes"
         ],
         "prerequisites": [
-          "conditionals-if",
+          "if-else-statements",
           "numbers",
           "strings"
         ],
@@ -129,13 +128,9 @@
         "slug": "blackjack",
         "name": "Play Your Cards!",
         "uuid": "43b8f2e3-99e9-49cc-a897-d66f0f26670d",
-        "concepts": [
-          "conditionals-if"
-        ],
-        "prerequisites": [
-          "booleans"
-        ],
-        "status": "active"
+        "concepts": [],
+        "prerequisites": [],
+        "status": "deprecated"
       },
       {
         "slug": "need-for-speed",
@@ -167,12 +162,8 @@
         "slug": "cars-assemble",
         "name": "Cars, Assemble!",
         "uuid": "3f451c6b-04e2-4b08-8bb0-7dcd2ec5b8f4",
-        "concepts": [
-          "numbers"
-        ],
-        "prerequisites": [
-          "conditionals-if"
-        ],
+        "concepts": ["if-else-statements", "numbers"],
+        "prerequisites": ["booleans"],
         "status": "active"
       },
       {
@@ -195,7 +186,7 @@
           "ternary-operators"
         ],
         "prerequisites": [
-          "conditionals-if",
+          "if-else-statements",
           "numbers"
         ],
         "status": "active"
@@ -236,6 +227,13 @@
         "prerequisites": [
 		],
 		"status": "active"
+      },
+      {
+        "slug": "logs-logs-logs",
+        "name": "Logs, Logs, Logs!",
+        "uuid": "f33927f7-676f-4045-b1fc-34e719453c61",
+        "concepts": ["enums"],
+        "prerequisites": ["strings", "switch-statement", "constructors"]
       }
     ],
     "practice": [
@@ -255,7 +253,7 @@
         "uuid": "74515d45-565b-4be2-96c4-77e58efa9257",
         "practices": [
           "strings",
-          "conditionals-if"
+          "if-else-statements"
         ],
         "prerequisites": [
           "basics"
@@ -319,9 +317,11 @@
         "name": "Secret Handshake",
         "uuid": "71c7c174-7e2c-43c2-bdd6-7515fcb12a91",
         "practices": [
-          "lists"
+          "lists",
+          "enums"
         ],
         "prerequisites": [
+          "enums",
           "numbers",
           "for-loops"
         ],
@@ -351,7 +351,7 @@
         ],
         "prerequisites": [
           "numbers",
-          "conditionals-if"          
+          "if-else-statements"          
         ],
         "difficulty": 4
       },
@@ -364,7 +364,7 @@
         ],
         "prerequisites": [
           "strings",
-          "conditionals-if",
+          "if-else-statements",
           "for-loops"
         ],
         "difficulty": 4
@@ -391,7 +391,7 @@
           "lists"
         ],
         "prerequisites": [
-          "conditionals-if",
+          "if-else-statements",
           "for-loops",
           "classes"
         ],
@@ -432,7 +432,7 @@
           "lists"
         ],
         "prerequisites": [
-          "conditionals-if",
+          "if-else-statements",
           "classes"
         ],
         "difficulty": 6
@@ -473,12 +473,12 @@
         "name": "Raindrops",
         "uuid": "d916e4f8-fda1-41c0-ab24-79e8fc3f1272",
         "practices": [
-          "conditionals-if",
+          "if-else-statements",
           "numbers",
           "strings"
         ],
         "prerequisites": [
-          "conditionals-if",
+          "if-else-statements",
           "numbers",
           "strings"
         ],
@@ -489,12 +489,12 @@
         "name": "Isogram",
         "uuid": "c3e89c7c-3a8a-4ddc-b653-9b0ff9e1d7d8",
         "practices": [
-          "conditionals-if",
+          "if-else-statements",
           "for-loops",
           "strings"
         ],
         "prerequisites": [
-          "conditionals-if",
+          "if-else-statements",
           "for-loops",
           "strings"
         ],
@@ -522,13 +522,13 @@
         "uuid": "fb10dc2f-0ba1-44b6-8365-5e48e86d1283",
         "practices": [
           "arrays",
-          "conditionals-if",
+          "if-else-statements",
           "lists",
           "for-loops"
         ],
         "prerequisites": [
           "arrays",
-          "conditionals-if",
+          "if-else-statements",
           "lists",
           "for-loops"
         ],
@@ -552,7 +552,7 @@
         "name": "Darts",
         "uuid": "4d400a44-b190-4a0c-affb-99fad8ea18da",
         "practices": [
-          "conditionals-if",
+          "if-else-statements",
           "constructors"
         ],
         "prerequisites": [
@@ -582,7 +582,7 @@
           "numbers"
         ],
         "prerequisites": [
-          "conditionals-if",
+          "if-else-statements",
           "for-loops"
         ],
         "difficulty": 2
@@ -604,10 +604,11 @@
         "name": "Resistor Color Duo",
         "uuid": "0ae1989d-df46-414d-ad1f-4bd0f0f78421",
         "practices": [
-          "arrays"
+          "arrays",
+          "enums"
         ],
         "prerequisites": [
-          "basics"
+          "enums"
         ],
         "difficulty": 2
       },
@@ -680,7 +681,7 @@
         "name": "Bob",
         "uuid": "34cd328c-cd96-492b-abd4-2b8716cdcd9a",
         "practices": [
-          "conditionals-if"
+          "if-else-statements"
         ],
         "prerequisites": [
           "strings",
@@ -692,12 +693,20 @@
         "slug": "beer-song",
         "name": "Beer Song",
         "uuid": "56943095-de76-40bf-b42b-fa3e70f8df5e",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 6,
+        "status": "deprecated"
+      },
+      {
+        "slug": "bottle-song",
+        "name": "Bottle Song",
+        "uuid": "3fa6750f-cf01-4542-a494-df9a8c658733",
         "practices": [
           "strings"
         ],
         "prerequisites": [
-          "for-loops",
-          "classes"
+          "strings"
         ],
         "difficulty": 6
       },
@@ -777,7 +786,7 @@
           "lists"
         ],
         "prerequisites": [
-          "conditionals-if",
+          "if-else-statements",
           "classes"
         ],
         "difficulty": 5
@@ -790,7 +799,7 @@
           "strings"
         ],
         "prerequisites": [
-          "conditionals-if",
+          "if-else-statements",
           "for-loops",
           "classes"
         ],
@@ -805,7 +814,7 @@
         ],
         "prerequisites": [
           "chars",
-          "conditionals-if",
+          "if-else-statements",
           "classes"
         ],
         "difficulty": 5
@@ -842,11 +851,14 @@
         "name": "Allergies",
         "uuid": "6a617ddb-04e3-451c-bb30-27ccd0be9125",
         "practices": [
+          "classes",
+          "enums",
+          "for-loops",
           "lists"
         ],
         "prerequisites": [
           "for-loops",
-          "classes"
+          "enums"
         ],
         "difficulty": 5
       },
@@ -855,11 +867,11 @@
         "name": "Meetup",
         "uuid": "602511d5-7e89-4def-b072-4dd311816810",
         "practices": [
+          "enums",
           "for-loops"
         ],
         "prerequisites": [
-          "conditionals-if",
-          "classes"
+          "enums"
         ],
         "difficulty": 7
       },
@@ -868,11 +880,12 @@
         "name": "Yacht",
         "uuid": "0cb45688-9598-49aa-accc-ed48c5d6962d",
         "practices": [
-          "arrays"
+          "arrays",
+          "enums",
+          "switch-statement"
         ],
         "prerequisites": [
-          "switch-statement",
-          "classes"
+          "enums"
         ],
         "difficulty": 4
       },
@@ -914,7 +927,7 @@
         "topics": [
           "arrays",
           "classes",
-          "conditionals-if",
+          "if-else-statements",
           "games",
           "matrices"
         ]
@@ -937,15 +950,15 @@
         "slug": "go-counting",
         "name": "Go Counting",
         "uuid": "2e760ae2-fadd-4d31-9639-c4554e2826e9",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 7,
-        "topics": [
-          "algorithms",
-          "conditionals-if",
-          "games",
-          "loops"
-        ]
+        "practices": [
+          "if-else-statements",
+          "for-loops",
+          "enums"
+        ],
+        "prerequisites": [
+          "enums"
+        ],
+        "difficulty": 7
       },
       {
         "slug": "markdown",
@@ -955,7 +968,7 @@
         "prerequisites": [],
         "difficulty": 7,
         "topics": [
-          "conditionals-if",
+          "if-else-statements",
           "pattern_matching",
           "refactoring",
           "strings"
@@ -994,16 +1007,16 @@
         "slug": "perfect-numbers",
         "name": "Perfect Numbers",
         "uuid": "d0dcc898-ec38-4822-9e3c-1a1829c9b2d9",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 3,
-        "topics": [
-          "enumerations",
-          "exception_handling",
-          "filtering",
-          "integers",
-          "math"
-        ]
+        "practices": [
+          "enums",
+          "exceptions",
+          "numbers"
+        ],
+        "prerequisites": [
+          "enums",
+          "exceptions"
+        ],
+        "difficulty": 3
       },
       {
         "slug": "say",
@@ -1040,7 +1053,7 @@
         "difficulty": 4,
         "topics": [
           "arrays",
-          "conditionals-if",
+          "if-else-statements",
           "integers",
           "loops",
           "math"
@@ -1055,7 +1068,7 @@
         "difficulty": 4,
         "topics": [
           "bitwise_operations",
-          "conditionals-if",
+          "if-else-statements",
           "exception_handling",
           "lists",
           "loops",
@@ -1070,7 +1083,7 @@
         "prerequisites": [],
         "difficulty": 6,
         "topics": [
-          "conditionals-if",
+          "if-else-statements",
           "logic"
         ]
       },
@@ -1078,15 +1091,15 @@
         "slug": "robot-simulator",
         "name": "Robot Simulator",
         "uuid": "993bde9d-7774-4e7a-a381-9eee75f28ecb",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 6,
-        "topics": [
+        "practices": [
           "classes",
-          "enumerations",
-          "logic",
-          "loops"
-        ]
+          "enums",
+          "for-loops"
+        ],
+        "prerequisites": [
+          "enums"
+        ],
+        "difficulty": 6
       },
       {
         "slug": "wordy",
@@ -1126,18 +1139,18 @@
         "slug": "kindergarten-garden",
         "name": "Kindergarten Garden",
         "uuid": "df41c70c-daa1-4380-9729-638c17b4105d",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 4,
-        "topics": [
+        "practices": [
           "arrays",
-          "enumerations",
+          "enums",
+          "for-loops",
           "lists",
-          "logic",
-          "loops",
-          "pattern_recognition",
           "strings"
-        ]
+        ],
+        "prerequisites": [
+          "enums",
+          "lists"
+        ],
+        "difficulty": 4
       },
       {
         "slug": "pascals-triangle",
@@ -1208,7 +1221,7 @@
         "prerequisites": [],
         "difficulty": 4,
         "topics": [
-          "conditionals-if",
+          "if-else-statements",
           "exception_handling",
           "integers",
           "math",
@@ -1252,7 +1265,7 @@
         "difficulty": 5,
         "topics": [
           "arrays",
-          "conditionals-if",
+          "if-else-statements",
           "integers",
           "lists",
           "loops",
@@ -1268,7 +1281,7 @@
         "difficulty": 7,
         "topics": [
           "algorithms",
-          "conditionals-if",
+          "if-else-statements",
           "loops"
         ]
       },
@@ -1360,7 +1373,7 @@
         "prerequisites": [],
         "difficulty": 6,
         "topics": [
-          "conditionals-if",
+          "if-else-statements",
           "loops",
           "strings"
         ]
@@ -1404,7 +1417,7 @@
         "difficulty": 6,
         "topics": [
           "arrays",
-          "conditionals-if",
+          "if-else-statements",
           "exception_handling",
           "integers",
           "loops",
@@ -1446,7 +1459,7 @@
         "prerequisites": [],
         "difficulty": 8,
         "topics": [
-          "conditionals-if",
+          "if-else-statements",
           "integers",
           "lists",
           "loops",
@@ -1515,7 +1528,7 @@
         "prerequisites": [],
         "difficulty": 6,
         "topics": [
-          "conditionals-if",
+          "if-else-statements",
           "lists",
           "maps",
           "sorting",
@@ -1563,6 +1576,21 @@
           "parsing",
           "strings"
         ]
+      },
+      {
+        "slug": "react",
+        "name": "React",
+        "uuid": "33531718-1d8a-4abd-bd2a-090303ad0c39",
+        "practices": [
+          "classes",
+          "generic-types"
+        ],
+        "prerequisites": [
+          "classes",
+          "generic-types"
+        ],
+        "difficulty": 8,
+        "topics": []
       },
       {
         "slug": "rectangles",
@@ -1624,16 +1652,16 @@
         "slug": "sublist",
         "name": "Sublist",
         "uuid": "d2aedbd7-092a-43d0-8a5e-ae3ebd5b9c7f",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 7,
-        "topics": [
-          "enumerations",
-          "generics",
-          "lists",
-          "loops",
-          "searching"
-        ]
+        "practices": [
+          "enums",
+          "generic-types",
+          "lists"
+        ],
+        "prerequisites": [
+          "enums",
+          "generic-types"
+        ],
+        "difficulty": 7
       },
       {
         "slug": "tree-building",
@@ -1683,25 +1711,20 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 8,
-        "topics": [
-          "algorithms",
-          "integers",
-          "math",
-          "transforming"
-        ]
+        "status": "deprecated"
       },
       {
         "slug": "hangman",
         "name": "Hangman",
         "uuid": "ab3f8bf4-cfae-4f7a-b134-bb0fa4fafa63",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 8,
-        "topics": [
-          "strings",
-          "reactive_programming",
-          "functional_programming"
-        ]
+        "practices": [
+          "enums",
+          "strings"
+        ],
+        "prerequisites": [
+          "enums"
+        ],
+        "difficulty": 8
       },
       {
         "slug": "list-ops",
@@ -1876,7 +1899,7 @@
         "prerequisites": [],
         "difficulty": 3,
         "topics": [
-          "conditionals-if",
+          "if-else-statements",
           "floating_point_numbers"
         ]
       },
@@ -1884,13 +1907,12 @@
         "slug": "connect",
         "name": "Connect",
         "uuid": "1532b9a8-7e0d-479f-ad55-636e01e9d19f",
-        "practices": ["enums", "switch-statement"],
-        "prerequisites": [
-          "strings",
-          "chars",
+        "practices": [
           "enums",
-          "arrays",
-          "conditionals-if"
+          "switch-statement"
+        ],
+        "prerequisites": [
+          "enums"
         ],
         "difficulty": 8
       },
@@ -1902,7 +1924,7 @@
         "prerequisites": [
             "strings",
             "chars",
-            "conditionals-if",
+            "if-else-statements",
             "lists",
             "for-loops"
         ],
@@ -1915,10 +1937,9 @@
         "practices": [],
         "prerequisites": [
           "strings",
-          "conditionals-if",
+          "if-else-statements",
           "lists",
-          "for-loops",
-          "maps"
+          "for-loops"
         ],
         "difficulty": 8
        },
@@ -1927,7 +1948,7 @@
         "name": "Ledger",
         "uuid": "6597548e-176d-49c6-be33-789f4c43867a",
         "practices": [],
-        "prerequisites": ["strings", "string-formatting"],
+        "prerequisites": ["strings"],
         "difficulty": 5
        },
        {
@@ -1937,6 +1958,14 @@
         "practices": ["lists", "classes", "for-loops"],
         "prerequisites" :["lists"],
         "difficulty": 2
+      },
+      {
+        "slug": "square-root",
+        "name": "Square Root",
+        "uuid": "61886554-ec84-422a-bbf9-aeee37c45bb6",
+        "practices": ["numbers"],
+        "prerequisites": ["numbers"],
+        "difficulty": 5
       }
     ],
     "foregone": []
@@ -1969,13 +1998,23 @@
     },
     {
       "uuid": "4ce7cdbb-4ff3-4988-89db-8fbcef380500",
-      "slug": "conditionals-if",
-      "name": "Conditionals If"
+      "slug": "if-else-statements",
+      "name": "If-Else Statements"
     },
     {
       "uuid": "e552c05c-6360-4b2f-a438-7ec7e855c0f5",
       "slug": "constructors",
       "name": "Constructors"
+    },
+    {
+      "uuid": "cb753863-b7c1-4ff6-adeb-ae9a1f39deca",
+      "slug": "enums",
+      "name": "Enums"
+    },
+    {
+      "uuid": "b7f8e129-303c-45b8-ac07-297bfd5a9906",
+      "slug": "exceptions",
+      "name": "Exceptions"
     },
     {
       "uuid": "3a1f7a96-b4a5-43d3-99e2-7c248e74e6c8",
