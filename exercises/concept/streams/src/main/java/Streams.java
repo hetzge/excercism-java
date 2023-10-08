@@ -2,7 +2,8 @@ import java.util.List;
 
 public class Streams {
 
-	public static List<ItemDto> createRequestStream(Item[] items, int offset, int limit, String titlePrefix, SortBy sortBy, boolean desc) {
+	public static List<ItemDto> createRequestStream(Item[] items, int offset, int limit, String titlePrefix,
+			SortBy sortBy, boolean desc) {
 		throw new UnsupportedOperationException();
 		// TODO Implement this method to transform the given array of `Item`s to a list
 		// of `ItemDto`s specified by the other parameters. Implement the following
@@ -12,7 +13,7 @@ public class Streams {
 		// * limit the result item count
 		// * only keep elements with given prefix
 		// * use an comparator to sort the items
-		// * Convert the Item objects to ItemDto objects
+		// * convert the Item objects to ItemDto objects
 		// * execute the stream and collect result in a List
 	}
 

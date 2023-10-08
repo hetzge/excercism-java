@@ -4,14 +4,21 @@ import java.util.stream.Stream;
 
 public class Streams {
 
-	public static List<ItemDto> createRequestStream(Item[] items, int offset, int limit, String titlePrefix, SortBy sortBy, boolean desc) {
+	public static List<ItemDto> createRequestStream(Item[] items, int offset, int limit, String titlePrefix,
+			SortBy sortBy, boolean desc) {
 		return Stream.of(items) // create the stream from the array
-				.filter(item -> titlePrefix == null || item.getTitle().startsWith(titlePrefix)) // only keep elements with given prefix
-				.skip(offset) // ignore the first elements until we are at offset position
-				.limit(limit) // limit the result item count
-				.sorted(Streams.createItemComparator(sortBy, desc)) // use an comparator to sort the items
-				.map(item -> new ItemDto(item.getId(), item.getTitle())) // Convert the Item objects to ItemDto objects
-				.toList(); // execute stream and collect result in a List
+				// only keep elements with given prefix
+				.filter(item -> titlePrefix == null || item.getTitle().startsWith(titlePrefix))
+				// ignore the first elements until we are at offset position
+				.skip(offset) 
+				// limit the result item count
+				.limit(limit) 
+				// use an comparator to sort the items
+				.sorted(Streams.createItemComparator(sortBy, desc)) 
+				// convert the Item objects to ItemDto objects
+				.map(item -> new ItemDto(item.getId(), item.getTitle()))
+				// execute stream and collect result in a List
+				.toList();
 	}
 
 	private static Comparator<Item> createItemComparator(SortBy sortBy, boolean desc) {
@@ -23,6 +30,6 @@ public class Streams {
 		} else {
 			comparator = (a, b) -> 0;
 		}
-		return desc ? comparator : comparator.reversed();
+		return desc ? comparator.reversed() : comparator; 
 	}
 }
